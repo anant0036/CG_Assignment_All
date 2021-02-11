@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id = "myaddress" class = "org.workspace.assignment.Address">
+    
+    <property name = "street" value = "Diva Street">
+    </property>
+    
+    <property name = "city" value = "NYC">
+    </property>
+    
+    <property name = "state" value = "Gonda">
+    </property>
+    
+    <property name = "zip" value = "18">
+    </property>
+    
+    <property name = "country" value = "UK">
+    </property>
+    
+    </bean>
+    
+    
+    <bean id = "cus" class = "org.workspace.assignment.Customer">
+    
+    <property name="customerId" value="1">
+    </property>
+    
+    <property name="customerName" value="Joe">
+    </property>
+    
+    <property name="customerContact" value="878713790">
+    </property>
+        
+    <property name="address" ref="myaddress">
+    </property>
+    
+    </bean>
+
+</beans>

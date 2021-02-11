@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<bean id = "queList" class="org.workspace.assignment.Question">
+	
+	<property name="questionId" value="1"></property>
+	<property name="question" value="How are you?"></property>
+	<property name="answer">
+	<list>
+	<value>I'm good</value>
+	<value>I'm fine</value>
+	<value>Not good</value>
+	</list>
+	</property> 
+	
+</bean>
+
+<bean id = "queSet" class="org.workspace.assignment.Question">
+	
+	<property name="questionId" value="1"></property>
+	<property name="question" value="How are you?"></property>
+	<property name="answerSet">
+	<set>
+	<value>I'm good via Set</value>
+	<value>I'm fine via Set</value>
+	<value>Not good via Set</value>
+	</set>
+	</property> 
+	
+</bean>
+
+<bean id = "queMap" class="org.workspace.assignment.Question">
+	
+	<property name="questionId" value="3"></property>
+	<property name="question" value="How are you?"></property>
+	<property name="answerSet">
+	<map>
+	<entry key= "1"  value="I'm good via map"></entry>
+	<entry key="2"  value="I'm fine via map"></entry>
+	<entry key="3"  value="Not good via map"></entry>
+	</map>
+	</property> 
+	
+</bean>
+
+
+</beans>
